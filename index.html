@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Animation 001</title>
+<style>
+
+.mainWrap { width: 500px; margin: 0 auto; border: 4px solid #b7c20b; padding:10px; min-height: 378px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+
+.vectorWrap { width: 100%; height: 378px; -webkit-animation-name: backgroundRunning;
+-webkit-animation-duration: 30s; -webkit-animation-iteration-count: infinite; animation-name: backgroundRunning; animation-duration: 30s; animation-iteration-count: infinite; }
+.vectorBox { width: 262px; height: 378px; margin: 0 auto; margin-top: 0px; position: relative; -webkit-animation-name: running;
+-webkit-animation-duration: 1s; -webkit-animation-iteration-count: infinite; animation-name: running; animation-duration: 1s; animation-iteration-count: infinite; }
+
+@-webkit-keyframes backgroundRunning {
+0%     { background: url(images/backgroundRoad.png); width: 100%; height: 378px; background-position: 580px center; }
+100%   { background: url(images/backgroundRoad.png); width: 100%; height: 378px; background-position: -580px center; }
+}
+ @keyframes backgroundRunning {
+0%     { background: url(images/backgroundRoad.png); width: 100%; height: 378px; background-position: 580px center; }
+100%   { background: url(images/backgroundRoad.png); width: 100%; height: 378px; background-position: -580px center; }
+}
+ @-webkit-keyframes running {
+0%     { background:url(images/vector-001.png); }
+14.26% { background:url(images/vector-002.png); }
+28.52% { background:url(images/vector-003.png); }
+42.78% { background:url(images/vector-004.png); }
+57.04% { background:url(images/vector-005.png); }
+71.3%  { background:url(images/vector-006.png); }
+85.56% { background:url(images/vector-007.png); }
+100%   { background:url(images/vector-008.png); }
+}
+ @keyframes running {
+0%     { background:url(images/vector-001.png); }
+14.26% { background:url(images/vector-002.png); }
+28.52% { background:url(images/vector-003.png); }
+42.78% { background:url(images/vector-004.png); }
+57.04% { background:url(images/vector-005.png); }
+71.3%  { background:url(images/vector-006.png); }
+85.56% { background:url(images/vector-007.png); }
+100%   { background:url(images/vector-008.png); }
+}
+
+</style>
+</head>
+
+<body>
+<div class="mainWrap">
+  <div class="vectorWrap">
+    <div class="vectorBox"></div>
+  </div>
+</div>
+</body>
+</html>
